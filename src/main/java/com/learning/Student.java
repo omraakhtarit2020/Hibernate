@@ -10,6 +10,8 @@ public class Student {
 	private int id;
 	private String name;
 
+	private Certificate certi;
+
 	public int getId() {
 		return id;
 	}
@@ -24,6 +26,14 @@ public class Student {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Certificate getCerti() {
+		return certi;
+	}
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
 	}
 
 	public Student() {

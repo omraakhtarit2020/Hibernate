@@ -10,7 +10,7 @@
 	    <property name="connection.username">omra</property>
 	    <property name="connection.password">root</property>
 	    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-	    <property name="hbm2ddl.auto">update</property>
+	    <property name="hbm2ddl.auto">create</property>
 	    <mapping class="com.learning.Student" />
 	    <mapping class="com.learning.Address" />
 	  </session-factory>
