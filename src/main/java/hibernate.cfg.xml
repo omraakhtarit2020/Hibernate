@@ -13,7 +13,9 @@
 	    <property name="hbm2ddl.auto">update</property>
 	    <mapping class="com.learning.Student" />
 	    <mapping class="com.learning.Address" />
-	    <mapping class="com.mapping.Question"/>
-	    <mapping class="com.mapping.Answer"/>
+	    <mapping class="com.mapping.Question" />
+	    <mapping class="com.mapping.Answer"  />
+	    <mapping class="com.mapping.Employee" />
+	    <mapping class="com.mapping.Project"/>
 	  </session-factory>
 	</hibernate-configuration>

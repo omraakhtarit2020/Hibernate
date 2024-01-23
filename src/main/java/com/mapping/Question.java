@@ -1,23 +1,27 @@
 package com.mapping;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Question {
 	@Id
 	private String qid;
 	private String question;
-	@OneToOne
-	private Answer aid;
+//	@OneToOne
+//	private Answer aid;
+	@OneToMany(mappedBy = "qid")
+	private List<Answer> aid;
 
 	public Question() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Question(String qid, String question, Answer aid) {
+	public Question(String qid, String question, List<Answer> aid) {
 		super();
 		this.qid = qid;
 		this.question = question;
@@ -40,11 +44,11 @@ public class Question {
 		this.question = question;
 	}
 
-	public Answer getAid() {
+	public List<Answer> getAid() {
 		return aid;
 	}
 
-	public void setAid(Answer aid) {
+	public void setAid(List<Answer> aid) {
 		this.aid = aid;
 	}
 
