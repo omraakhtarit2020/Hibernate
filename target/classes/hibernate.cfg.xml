@@ -11,11 +11,13 @@
 	    <property name="connection.password">root</property>
 	    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
 	    <property name="hbm2ddl.auto">update</property>
+	    <property name="show_sql">true</property>
 	    <mapping class="com.learning.Student" />
 	    <mapping class="com.learning.Address" />
-	    <mapping class="com.mapping.Question" />
-	    <mapping class="com.mapping.Answer"  />
+	   
 	    <mapping class="com.mapping.Employee" />
 	    <mapping class="com.mapping.Project"/>
+	    <mapping class="com.fetchType.Question" />
+	    <mapping class="com.fetchType.Answer" />
 	  </session-factory>
 	</hibernate-configuration>
