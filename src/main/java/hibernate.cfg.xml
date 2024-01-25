@@ -14,10 +14,11 @@
 	    <property name="show_sql">true</property>
 	    <mapping class="com.learning.Student" />
 	    <mapping class="com.learning.Address" />
-	   
+	    <mapping class="com.persistence.StudentDemo"/>
+	    <!-- 
 	    <mapping class="com.mapping.Employee" />
 	    <mapping class="com.mapping.Project"/>
 	    <mapping class="com.fetchType.Question" />
-	    <mapping class="com.fetchType.Answer" />
+	    <mapping class="com.fetchType.Answer" /> -->
 	  </session-factory>
 	</hibernate-configuration>
